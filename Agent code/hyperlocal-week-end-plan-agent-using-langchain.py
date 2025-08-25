@@ -90,7 +90,7 @@ def fetch_local_events(location, date_range, keywords):
 
 import os
 
-OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY", "823aecdb925ac9449c38a3b25edfeb9a")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY", "YOUR-API-KEY-HERE")
 
 
 def get_weather_forecast(location, date_range):
@@ -200,8 +200,8 @@ from langchain.tools import Tool
 
 def initialize_weekend_planner_agent():
   """Initializes the weekend planner agent with function tools and RAG"""
-  llm = ChatGoogleGenerativeAI(model=GEMINI_MODEL_NAME, google_api_key='AIzaSyAwTkhzP-5snp-NfeUs8h5gFBlOYyTSt-c')
-  embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key='AIzaSyAwTkhzP-5snp-NfeUs8h5gFBlOYyTSt-c')
+  llm = ChatGoogleGenerativeAI(model=GEMINI_MODEL_NAME, google_api_key='YOUR-API-KEY-HERE')
+  embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key='YOUR-API-KEY-HERE')
   local_knowledge = load_local_knowledge()
   rag_chain = create_rag_chain(llm, embeddings, local_knowledge)
 
