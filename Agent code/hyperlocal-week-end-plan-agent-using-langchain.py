@@ -26,8 +26,8 @@ TARGET_WEEKEND_START = datetime.date(2025, 4, 19)
 TARGET_WEEKEND_END = datetime.date(2025, 4, 20)
 GEMINI_MODEL_NAME = 'gemini-2.0-flash'
 
-OPENWEATHER_API_KEY = "823aecdb925ac9449c38a3b25edfeb9a"
-EVENTBRITE_API_KEY = "3MMHX3MZ2L7BD26KFQ"
+OPENWEATHER_API_KEY = "<-Your-Open-Weather_API_Key->"
+EVENTBRITE_API_KEY = "<-Your-Eventbrite-API-Key->"
 
 class Event:
   def __init__(self, name, location, date, time, category, description, url=None):
